@@ -11,7 +11,7 @@ import torch.optim as optim
 from dataset.kitti_dataset import kitti_train, kitti_flow
 from model.upflow import UPFlow_net
 from torch.utils.data import DataLoader
-from torch.utils.data.dataloader import _MultiProcessingDataLoaderIter as _DataLoaderIter
+
 import time
 
 if_cuda = True
