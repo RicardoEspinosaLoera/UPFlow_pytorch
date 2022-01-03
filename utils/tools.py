@@ -1,5 +1,6 @@
 import torch
-from torch.utils.data.dataloader import _DataLoaderIter, DataLoader  # need torch.__version__ == '1.1.0'
+#from torch.utils.data.dataloader import _DataLoaderIter, DataLoader  # need torch.__version__ == '1.1.0'
+from torch.utils.data.dataloader import _MultiProcessingDataLoaderIter as _DataLoaderIter
 # from torch.utils.data import DataLoader
 # if torch.__version__ == '1.5.1' or torch.__version__ == '1.4.0' use this
 # from torch.utils.data.dataloader import _MultiProcessingDataLoaderIter as _DataLoaderIter
