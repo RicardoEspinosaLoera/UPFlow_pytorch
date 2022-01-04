@@ -50,6 +50,7 @@ class Test_model(tools.abs_test_model):
     def eval_save_result(self, save_name, predflow, *args, **kwargs):
         # you can save flow results here
         print(save_name)
+        print(predflow.shape)
 
 
 def kitti_2015_test():
