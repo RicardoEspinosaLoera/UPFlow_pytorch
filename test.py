@@ -52,7 +52,7 @@ class Test_model(tools.abs_test_model):
         # you can save flow results here
         print(save_name)
         print(predflow.shape)
-        save_image(predflow,('%.png' (save_name)))
+        save_image(predflow,"%.png".format(save_name))
 
 
 def kitti_2015_test():
