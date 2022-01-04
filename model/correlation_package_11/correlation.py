@@ -62,7 +62,7 @@ class Correlation(Module):
         self.stride2 = stride2
         self.corr_multiply = corr_multiply
 
-    # @staticmethod
+    @staticmethod
     def forward(self, input1, input2):
 
         input1 = input1.contiguous()
