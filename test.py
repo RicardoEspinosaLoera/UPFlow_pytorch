@@ -26,7 +26,7 @@ class Test_model(tools.abs_test_model):
             'norm_moments_across_channels': False,
             'norm_moments_across_images': False,
             'if_froze_pwc': False,
-            'if_use_cor_pytorch': False,  # speed is very slow, just for debug when cuda correlation is not compiled
+            'if_use_cor_pytorch': True,  # speed is very slow, just for debug when cuda correlation is not compiled
             'if_sgu_upsample': True,
         }
         net_conf = UPFlow_net.config()
