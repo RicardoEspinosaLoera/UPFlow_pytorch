@@ -11,6 +11,7 @@ import torch.optim as optim
 from dataset.kitti_dataset import kitti_train, kitti_flow
 from model.upflow import UPFlow_net
 from torch.utils.data import DataLoader
+from torchvision.utils import save_image
 
 import time
 
@@ -51,6 +52,7 @@ class Test_model(tools.abs_test_model):
         # you can save flow results here
         print(save_name)
         print(predflow.shape)
+        save_image(predflow,('%.png' (save_name)))
 
 
 def kitti_2015_test():
