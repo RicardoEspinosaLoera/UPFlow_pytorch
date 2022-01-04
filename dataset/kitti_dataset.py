@@ -31,7 +31,7 @@ mv_data_dir = '/data/Optical_Flow_all/datasets/KITTI_data/KITTI_data_mv'  # TODO
         kitti 2015 data: data_scene_flow.zip  (1.7GB)
     here you should unzip them
 '''
-kitti_flow_dir = 'data/Optical_Flow_all/datasets/KITTI_data/data_scene_flow'  # TODO important path
+kitti_flow_dir = 'data/Optical_Flow_all/datasets/KITTI_data/'  # TODO important path
 
 
 class img_func():
