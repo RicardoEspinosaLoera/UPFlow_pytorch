@@ -548,10 +548,10 @@ class kitti_flow:
         else:
             data = {}
             # get 2012 train dataset paths
-            image_dir = os.path.join(kitti_flow_dir, 'data_stereo_flow', 'training', 'colored_0')
+            '''image_dir = os.path.join(kitti_flow_dir, 'data_stereo_flow', 'training', 'colored_0')
             flow_dir_occ = os.path.join(kitti_flow_dir, 'data_stereo_flow', 'training', 'flow_occ')
             flow_dir_noc = os.path.join(kitti_flow_dir, 'data_stereo_flow', 'training', 'flow_noc')
-            data['2012_train'] = get_img_flow_path_pair(im_dir=image_dir, flow_occ_dir=flow_dir_occ, flow_noc_dir=flow_dir_noc)
+            data['2012_train'] = get_img_flow_path_pair(im_dir=image_dir, flow_occ_dir=flow_dir_occ, flow_noc_dir=flow_dir_noc)'''
             # get 2015 train dataset paths
             image_dir = os.path.join(kitti_flow_dir, 'data_scene_flow', 'training', 'image_2')
             flow_dir_occ = os.path.join(kitti_flow_dir, 'data_scene_flow', 'training', 'flow_occ')
@@ -559,8 +559,8 @@ class kitti_flow:
             data['2015_train'] = get_img_flow_path_pair(im_dir=image_dir, flow_occ_dir=flow_dir_occ, flow_noc_dir=flow_dir_noc)
 
             # get 2012 test dataset paths
-            image_dir = os.path.join(kitti_flow_dir, 'data_stereo_flow', 'testing', 'colored_0')
-            data['2012_test'] = get_img_path_dir(im_dir=image_dir)
+            #image_dir = os.path.join(kitti_flow_dir, 'data_stereo_flow', 'testing', 'colored_0')
+            #data['2012_test'] = get_img_path_dir(im_dir=image_dir)
             # get 2015 test dataset paths
             image_dir = os.path.join(kitti_flow_dir, 'data_scene_flow', 'testing', 'image_2')
             data['2015_test'] = get_img_path_dir(im_dir=image_dir)
